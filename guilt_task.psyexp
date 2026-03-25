@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.2.5">
+  <Settings>
+    <Param val="3" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="" valType="str" updates="None" name="End Message"/>
+    <Param val="{'participant': '001', 'session': '001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="norm" valType="str" updates="None" name="Units"/>
+    <Param val="2022.2.5" valType="str" updates="None" name="Use version"/>
+    <Param val="[1920, 1080]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+    <Param val="" valType="str" updates="None" name="backgroundImg"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="guilt_task" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="PsychToolbox" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+    <Param val="pyglet" valType="str" updates="None" name="winBackend"/>
+  </Settings>
+  <Routines>
+    <Routine name="instructions">
+      <TextComponent name="instructions_text">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.09" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="instructions_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Cuando en la pantalla aparezcan las palabras clave relacionadas con sus recuerdos, revívalo y preste atención a los sentimientos relacionados.&amp;#10;&amp;#10;Luego, recuerde responder la pregunta de las circunstancias del evento antes de 4 segundos.&amp;#10;&amp;#10;En la tarea aritmética elija el número correcto en menos de 2 segundos.&amp;#10;&amp;#10;Cuando haya leído esta instrucción, presione cualquier botón para avanzar. El experimento comenzará pronto." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="ready_beginning">
+        <Param val="" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="ready_beginning" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="2.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="thanks">
+      <TextComponent name="thanks_text">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.12" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="thanks_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Gracias por su participación!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="memory_block">
+      <TextComponent name="memory_presentation">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.12" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="memory_presentation" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="10" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$memory_stimuli" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <PolygonComponent name="fixation_1">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="fixation_1" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.10, 0.16)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="10.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.00" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <TextComponent name="memory_question_disp">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.12" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="memory_question_disp" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.0, 0.15)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="11.00" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4.00" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$memory_question" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="memory_answer_1_disp">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.12" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="memory_answer_1_disp" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.4, -0.15)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="11.00" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$memory_answer_1" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="memory_answer_2_disp">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.12" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="memory_answer_2_disp" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.0, -0.15)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="11.00" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$memory_answer_2" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="memory_answer_3_disp">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.12" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="memory_answer_3_disp" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.4, -0.15)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="11.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$memory_answer_3" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="memory_question_resp">
+        <Param val="'d', 'n', 'w', 'g', 'b', 'y', 'r'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$correct_answer" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="memory_question_resp" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="11.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <CodeComponent name="fixation_2_code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="if ((Object.getPrototypeOf(memory_question_resp.rt) === list)) {&amp;#10;    fixation_2_duration = 1;&amp;#10;} else {&amp;#10;    fixation_2_duration = (1 + (Math.floor((60 * (4 - memory_question_resp.rt))) / 60));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="if type(memory_question_resp.rt) == list:&amp;#10;    fixation_2_duration = 1&amp;#10;else:&amp;#10;    fixation_2_duration = 1 + (math.floor(60*(4-memory_question_resp.rt))/60)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="fixation_2_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="distractor_trial">
+      <TextComponent name="top_number">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.12" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="top_number" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.15)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$stimulus_number" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="left_number">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.12" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="left_number" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.2, -0.15)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$answer_left" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="right_number">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.12" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="right_number" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.2, -0.15)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$answer_right" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="distractor_resp">
+        <Param val="'n','w','d', 'g', 'b', 'y', 'r'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$corr_answer" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="distractor_resp" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="start_scanning">
+      <KeyboardComponent name="start_scan_keypress">
+        <Param val="'s'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="start_scan_keypress" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="dummy_scans">
+      <CodeComponent name="set_up_variables">
+        <Param val="import math" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="import * as math from 'math';&amp;#10;" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="set_up_variables" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <PolygonComponent name="fixation_0">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="fixation_0" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.10, 0.16)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="20.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="fix_post_mem">
+      <PolygonComponent name="fixation_2">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="fixation_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.10, 0.16)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="$fixation_2_duration" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <KeyboardComponent name="memory_question_late_response">
+        <Param val="'d', 'n', 'w', 'g', 'b', 'y', 'r'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$correct_answer" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="memory_question_late_response" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="$fixation_2_duration" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="distractor_fix">
+      <PolygonComponent name="fixation_3">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="fixation_3" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.10, 0.16)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instructions"/>
+    <Routine name="start_scanning"/>
+    <Routine name="dummy_scans"/>
+    <LoopInitiator loopType="TrialHandler" name="block_ordering_loop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n2', 'memory_stimuli': 'bici, Sant Miguel, otro ciclista, Font de Buitre, mostrar camino nuevo', 'memory_question': '¿Dónde tuvo lugar el recuerdo?', 'memory_answer_1': 'Afuera', 'memory_answer_2': 'Adentro', 'memory_answer_3': 'Ambos', 'correct_answer': 'left'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g2', 'memory_stimuli': 'casa Santi, sofá, television, Santi, José', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'down'}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n3', 'memory_stimuli': 'museo, Barcelona, Nara, arte moderno, no nos gustó', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'left'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g1', 'memory_stimuli': 'parking Candelight, coche padres, árbol, Maya, Erik', 'memory_question': '¿Hace cuántos años ocurrió el evento?', 'memory_answer_1': '0-1', 'memory_answer_2': '2-5', 'memory_answer_3': '5+', 'correct_answer': 'right'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g5', 'memory_stimuli': 'Granada, pueblo, ropa, Ad, Esheer', 'memory_question': '¿Hace cuántos años ocurrió el evento?', 'memory_answer_1': '0-1', 'memory_answer_2': '2-5', 'memory_answer_3': '5+', 'correct_answer': 'right'}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n4', 'memory_stimuli': 'casco integral, tren, baño, persona que comprueba el billete, dejar pasar', 'memory_question': '¿Dónde tuvo lugar el recuerdo?', 'memory_answer_1': 'Afuera', 'memory_answer_2': 'Adentro', 'memory_answer_3': 'Ambos', 'correct_answer': 'down'}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n5', 'memory_stimuli': 'Manchester, park, bonfire, Magdalena, heat', 'memory_question': '¿Dónde tuvo lugar el recuerdo?', 'memory_answer_1': 'Afuera', 'memory_answer_2': 'Adentro', 'memory_answer_3': 'Ambos', 'correct_answer': 'left'}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g3', 'memory_stimuli': 'José, calles Castellon, Ad, sandalia, ayuntamiento', 'memory_question': '¿Hace cuántos años ocurrió el evento?', 'memory_answer_1': '0-1', 'memory_answer_2': '2-5', 'memory_answer_3': '5+', 'correct_answer': 'right'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n1', 'memory_stimuli': 'montaña, zapatos, sola, andar, naturaleza', 'memory_question': '¿Dónde tuvo lugar el recuerdo?', 'memory_answer_1': 'Afuera', 'memory_answer_2': 'Adentro', 'memory_answer_3': 'Ambos', 'correct_answer': 'left'}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g4', 'memory_stimuli': 'casa, Laura, escalera, valla, Jeroen', 'memory_question': '¿Hace cuántos años ocurrió el evento?', 'memory_answer_1': '0-1', 'memory_answer_2': '2-5', 'memory_answer_3': '5+', 'correct_answer': 'down'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g2', 'memory_stimuli': 'casa Santi, sofá, television, Santi, José', 'memory_question': '¿Hace cuántos años ocurrió el evento?', 'memory_answer_1': '0-1', 'memory_answer_2': '2-5', 'memory_answer_3': '5+', 'correct_answer': 'right'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n4', 'memory_stimuli': 'casco integral, tren, baño, persona que comprueba el billete, dejar pasar', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'down'}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n3', 'memory_stimuli': 'museo, Barcelona, Nara, arte moderno, no nos gustó', 'memory_question': '¿Dónde tuvo lugar el recuerdo?', 'memory_answer_1': 'Afuera', 'memory_answer_2': 'Adentro', 'memory_answer_3': 'Ambos', 'correct_answer': 'down'}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g1', 'memory_stimuli': 'parking Candelight, coche padres, árbol, Maya, Erik', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'left'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g5', 'memory_stimuli': 'Granada, pueblo, ropa, Ad, Esheer', 'memory_question': '¿Dónde tuvo lugar el recuerdo?', 'memory_answer_1': 'Afuera', 'memory_answer_2': 'Adentro', 'memory_answer_3': 'Ambos', 'correct_answer': 'left'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n5', 'memory_stimuli': 'Manchester, park, bonfire, Magdalena, heat', 'memory_question': '¿Hace cuántos años ocurrió el evento?', 'memory_answer_1': '0-1', 'memory_answer_2': '2-5', 'memory_answer_3': '5+', 'correct_answer': 'right'}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n2', 'memory_stimuli': 'bici, Sant Miguel, otro ciclista, Font de Buitre, mostrar camino nuevo', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'left'}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g4', 'memory_stimuli': 'casa, Laura, escalera, valla, Jeroen', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'down'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n1', 'memory_stimuli': 'montaña, zapatos, sola, andar, naturaleza', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'left'}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g3', 'memory_stimuli': 'José, calles Castellon, Ad, sandalia, ayuntamiento', 'memory_question': '¿Dónde tuvo lugar el recuerdo?', 'memory_answer_1': 'Afuera', 'memory_answer_2': 'Adentro', 'memory_answer_3': 'Ambos', 'correct_answer': 'left'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n4', 'memory_stimuli': 'casco integral, tren, baño, persona que comprueba el billete, dejar pasar', 'memory_question': '¿Hace cuántos años ocurrió el evento?', 'memory_answer_1': '0-1', 'memory_answer_2': '2-5', 'memory_answer_3': '5+', 'correct_answer': 'left'}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g1', 'memory_stimuli': 'parking Candelight, coche padres, árbol, Maya, Erik', 'memory_question': '¿Dónde tuvo lugar el recuerdo?', 'memory_answer_1': 'Afuera', 'memory_answer_2': 'Adentro', 'memory_answer_3': 'Ambos', 'correct_answer': 'left'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n3', 'memory_stimuli': 'museo, Barcelona, Nara, arte moderno, no nos gustó', 'memory_question': '¿Hace cuántos años ocurrió el evento?', 'memory_answer_1': '0-1', 'memory_answer_2': '2-5', 'memory_answer_3': '5+', 'correct_answer': 'right'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g2', 'memory_stimuli': 'casa Santi, sofá, television, Santi, José', 'memory_question': '¿Dónde tuvo lugar el recuerdo?', 'memory_answer_1': 'Afuera', 'memory_answer_2': 'Adentro', 'memory_answer_3': 'Ambos', 'correct_answer': 'down'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g5', 'memory_stimuli': 'Granada, pueblo, ropa, Ad, Esheer', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'left'}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n2', 'memory_stimuli': 'bici, Sant Miguel, otro ciclista, Font de Buitre, mostrar camino nuevo', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'left'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g4', 'memory_stimuli': 'casa, Laura, escalera, valla, Jeroen', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'down'}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n1', 'memory_stimuli': 'montaña, zapatos, sola, andar, naturaleza', 'memory_question': '¿Hace cuántos años ocurrió el evento?', 'memory_answer_1': '0-1', 'memory_answer_2': '2-5', 'memory_answer_3': '5+', 'correct_answer': 'right'}, {'block_type': 'memory', 'memory_type': 'guilt', 'memory_code': 'g3', 'memory_stimuli': 'José, calles Castellon, Ad, sandalia, ayuntamiento', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'left'}, {'block_type': 'distractor', 'memory_type': None, 'memory_code': None, 'memory_stimuli': None, 'memory_question': None, 'memory_answer_1': None, 'memory_answer_2': None, 'memory_answer_3': None, 'correct_answer': None}, {'block_type': 'memory', 'memory_type': 'neutral', 'memory_code': 'n5', 'memory_stimuli': 'Manchester, park, bonfire, Magdalena, heat', 'memory_question': '¿Cuántas personas participaron en la memoria?', 'memory_answer_1': '0-2', 'memory_answer_2': '3-5', 'memory_answer_3': '5+', 'correct_answer': 'right'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="block_order.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="block_ordering_loop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="memory_block"/>
+    <Routine name="fix_post_mem"/>
+    <LoopInitiator loopType="TrialHandler" name="distractor_block">
+      <Param name="Selected rows" updates="None" val="$ np.random.choice(180 , size = distractor_n , replace = False)" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'stimulus_number': 16, 'answer_left': 1, 'answer_right': 98, 'corr_answer': 'n', 'diff_left': 15, 'diff_right': 82, 'choice_diff': 67}, {'stimulus_number': 47, 'answer_left': 16, 'answer_right': 100, 'corr_answer': 'n', 'diff_left': 31, 'diff_right': 53, 'choice_diff': 22}, {'stimulus_number': 21, 'answer_left': 18, 'answer_right': 49, 'corr_answer': 'n', 'diff_left': 3, 'diff_right': 28, 'choice_diff': 25}, {'stimulus_number': 72, 'answer_left': 100, 'answer_right': 64, 'corr_answer': 'w', 'diff_left': 28, 'diff_right': 8, 'choice_diff': 20}, {'stimulus_number': 91, 'answer_left': 43, 'answer_right': 99, 'corr_answer': 'w', 'diff_left': 48, 'diff_right': 8, 'choice_diff': 40}, {'stimulus_number': 20, 'answer_left': 99, 'answer_right': 15, 'corr_answer': 'w', 'diff_left': 79, 'diff_right': 5, 'choice_diff': 74}, {'stimulus_number': 91, 'answer_left': 100, 'answer_right': 59, 'corr_answer': 'n', 'diff_left': 9, 'diff_right': 32, 'choice_diff': 23}, {'stimulus_number': 65, 'answer_left': 74, 'answer_right': 36, 'corr_answer': 'n', 'diff_left': 9, 'diff_right': 29, 'choice_diff': 20}, {'stimulus_number': 83, 'answer_left': 85, 'answer_right': 62, 'corr_answer': 'n', 'diff_left': 2, 'diff_right': 21, 'choice_diff': 19}, {'stimulus_number': 12, 'answer_left': 67, 'answer_right': 1, 'corr_answer': 'w', 'diff_left': 55, 'diff_right': 11, 'choice_diff': 44}, {'stimulus_number': 19, 'answer_left': 50, 'answer_right': 8, 'corr_answer': 'w', 'diff_left': 31, 'diff_right': 11, 'choice_diff': 20}, {'stimulus_number': 48, 'answer_left': 8, 'answer_right': 62, 'corr_answer': 'w', 'diff_left': 40, 'diff_right': 14, 'choice_diff': 26}, {'stimulus_number': 41, 'answer_left': 52, 'answer_right': 9, 'corr_answer': 'n', 'diff_left': 11, 'diff_right': 32, 'choice_diff': 21}, {'stimulus_number': 33, 'answer_left': 42, 'answer_right': 6, 'corr_answer': 'n', 'diff_left': 9, 'diff_right': 27, 'choice_diff': 18}, {'stimulus_number': 86, 'answer_left': 88, 'answer_right': 50, 'corr_answer': 'n', 'diff_left': 2, 'diff_right': 36, 'choice_diff': 34}, {'stimulus_number': 55, 'answer_left': 15, 'answer_right': 67, 'corr_answer': 'w', 'diff_left': 40, 'diff_right': 12, 'choice_diff': 28}, {'stimulus_number': 71, 'answer_left': 13, 'answer_right': 97, 'corr_answer': 'w', 'diff_left': 58, 'diff_right': 26, 'choice_diff': 32}, {'stimulus_number': 58, 'answer_left': 3, 'answer_right': 85, 'corr_answer': 'w', 'diff_left': 55, 'diff_right': 27, 'choice_diff': 28}, {'stimulus_number': 67, 'answer_left': 58, 'answer_right': 95, 'corr_answer': 'n', 'diff_left': 9, 'diff_right': 28, 'choice_diff': 19}, {'stimulus_number': 26, 'answer_left': 34, 'answer_right': 1, 'corr_answer': 'n', 'diff_left': 8, 'diff_right': 25, 'choice_diff': 17}, {'stimulus_number': 49, 'answer_left': 63, 'answer_right': 16, 'corr_answer': 'n', 'diff_left': 14, 'diff_right': 33, 'choice_diff': 19}, {'stimulus_number': 39, 'answer_left': 11, 'answer_right': 47, 'corr_answer': 'w', 'diff_left': 28, 'diff_right': 8, 'choice_diff': 20}, {'stimulus_number': 66, 'answer_left': 40, 'answer_right': 73, 'corr_answer': 'w', 'diff_left': 26, 'diff_right': 7, 'choice_diff': 19}, {'stimulus_number': 52, 'answer_left': 92, 'answer_right': 39, 'corr_answer': 'w', 'diff_left': 40, 'diff_right': 13, 'choice_diff': 27}, {'stimulus_number': 31, 'answer_left': 7, 'answer_right': 81, 'corr_answer': 'n', 'diff_left': 24, 'diff_right': 50, 'choice_diff': 26}, {'stimulus_number': 53, 'answer_left': 59, 'answer_right': 7, 'corr_answer': 'n', 'diff_left': 6, 'diff_right': 46, 'choice_diff': 40}, {'stimulus_number': 13, 'answer_left': 2, 'answer_right': 46, 'corr_answer': 'n', 'diff_left': 11, 'diff_right': 33, 'choice_diff': 22}, {'stimulus_number': 88, 'answer_left': 53, 'answer_right': 100, 'corr_answer': 'w', 'diff_left': 35, 'diff_right': 12, 'choice_diff': 23}, {'stimulus_number': 45, 'answer_left': 76, 'answer_right': 34, 'corr_answer': 'w', 'diff_left': 31, 'diff_right': 11, 'choice_diff': 20}, {'stimulus_number': 69, 'answer_left': 20, 'answer_right': 86, 'corr_answer': 'w', 'diff_left': 49, 'diff_right': 17, 'choice_diff': 32}, {'stimulus_number': 71, 'answer_left': 62, 'answer_right': 100, 'corr_answer': 'n', 'diff_left': 9, 'diff_right': 29, 'choice_diff': 20}, {'stimulus_number': 48, 'answer_left': 43, 'answer_right': 98, 'corr_answer': 'n', 'diff_left': 5, 'diff_right': 50, 'choice_diff': 45}, {'stimulus_number': 35, 'answer_left': 20, 'answer_right': 82, 'corr_answer': 'n', 'diff_left': 15, 'diff_right': 47, 'choice_diff': 32}, {'stimulus_number': 80, 'answer_left': 48, 'answer_right': 88, 'corr_answer': 'w', 'diff_left': 32, 'diff_right': 8, 'choice_diff': 24}, {'stimulus_number': 26, 'answer_left': 52, 'answer_right': 19, 'corr_answer': 'w', 'diff_left': 26, 'diff_right': 7, 'choice_diff': 19}, {'stimulus_number': 37, 'answer_left': 93, 'answer_right': 5, 'corr_answer': 'w', 'diff_left': 56, 'diff_right': 32, 'choice_diff': 24}, {'stimulus_number': 79, 'answer_left': 82, 'answer_right': 46, 'corr_answer': 'n', 'diff_left': 3, 'diff_right': 33, 'choice_diff': 30}, {'stimulus_number': 29, 'answer_left': 19, 'answer_right': 94, 'corr_answer': 'n', 'diff_left': 10, 'diff_right': 65, 'choice_diff': 55}, {'stimulus_number': 64, 'answer_left': 59, 'answer_right': 84, 'corr_answer': 'n', 'diff_left': 5, 'diff_right': 20, 'choice_diff': 15}, {'stimulus_number': 44, 'answer_left': 81, 'answer_right': 28, 'corr_answer': 'w', 'diff_left': 37, 'diff_right': 16, 'choice_diff': 21}, {'stimulus_number': 36, 'answer_left': 80, 'answer_right': 14, 'corr_answer': 'w', 'diff_left': 44, 'diff_right': 22, 'choice_diff': 22}, {'stimulus_number': 24, 'answer_left': 73, 'answer_right': 2, 'corr_answer': 'w', 'diff_left': 49, 'diff_right': 22, 'choice_diff': 27}, {'stimulus_number': 52, 'answer_left': 59, 'answer_right': 27, 'corr_answer': 'n', 'diff_left': 7, 'diff_right': 25, 'choice_diff': 18}, {'stimulus_number': 53, 'answer_left': 64, 'answer_right': 23, 'corr_answer': 'n', 'diff_left': 11, 'diff_right': 30, 'choice_diff': 19}, {'stimulus_number': 66, 'answer_left': 79, 'answer_right': 34, 'corr_answer': 'n', 'diff_left': 13, 'diff_right': 32, 'choice_diff': 19}, {'stimulus_number': 41, 'answer_left': 7, 'answer_right': 53, 'corr_answer': 'w', 'diff_left': 34, 'diff_right': 12, 'choice_diff': 22}, {'stimulus_number': 18, 'answer_left': 85, 'answer_right': 2, 'corr_answer': 'w', 'diff_left': 67, 'diff_right': 16, 'choice_diff': 51}, {'stimulus_number': 89, 'answer_left': 49, 'answer_right': 100, 'corr_answer': 'w', 'diff_left': 40, 'diff_right': 11, 'choice_diff': 29}, {'stimulus_number': 72, 'answer_left': 89, 'answer_right': 31, 'corr_answer': 'n', 'diff_left': 17, 'diff_right': 41, 'choice_diff': 24}, {'stimulus_number': 56, 'answer_left': 67, 'answer_right': 13, 'corr_answer': 'n', 'diff_left': 11, 'diff_right': 43, 'choice_diff': 32}, {'stimulus_number': 70, 'answer_left': 82, 'answer_right': 4, 'corr_answer': 'n', 'diff_left': 12, 'diff_right': 66, 'choice_diff': 54}, {'stimulus_number': 63, 'answer_left': 24, 'answer_right': 72, 'corr_answer': 'w', 'diff_left': 39, 'diff_right': 9, 'choice_diff': 30}, {'stimulus_number': 39, 'answer_left': 4, 'answer_right': 47, 'corr_answer': 'w', 'diff_left': 35, 'diff_right': 8, 'choice_diff': 27}, {'stimulus_number': 68, 'answer_left': 10, 'answer_right': 94, 'corr_answer': 'w', 'diff_left': 58, 'diff_right': 26, 'choice_diff': 32}, {'stimulus_number': 26, 'answer_left': 13, 'answer_right': 59, 'corr_answer': 'n', 'diff_left': 13, 'diff_right': 33, 'choice_diff': 20}, {'stimulus_number': 54, 'answer_left': 60, 'answer_right': 21, 'corr_answer': 'n', 'diff_left': 6, 'diff_right': 33, 'choice_diff': 27}, {'stimulus_number': 76, 'answer_left': 80, 'answer_right': 50, 'corr_answer': 'n', 'diff_left': 4, 'diff_right': 26, 'choice_diff': 22}, {'stimulus_number': 86, 'answer_left': 54, 'answer_right': 92, 'corr_answer': 'w', 'diff_left': 32, 'diff_right': 6, 'choice_diff': 26}, {'stimulus_number': 29, 'answer_left': 73, 'answer_right': 15, 'corr_answer': 'w', 'diff_left': 44, 'diff_right': 14, 'choice_diff': 30}, {'stimulus_number': 21, 'answer_left': 66, 'answer_right': 17, 'corr_answer': 'w', 'diff_left': 45, 'diff_right': 4, 'choice_diff': 41}, {'stimulus_number': 39, 'answer_left': 14, 'answer_right': 88, 'corr_answer': 'n', 'diff_left': 25, 'diff_right': 49, 'choice_diff': 24}, {'stimulus_number': 49, 'answer_left': 47, 'answer_right': 74, 'corr_answer': 'n', 'diff_left': 2, 'diff_right': 25, 'choice_diff': 23}, {'stimulus_number': 35, 'answer_left': 4, 'answer_right': 93, 'corr_answer': 'n', 'diff_left': 31, 'diff_right': 58, 'choice_diff': 27}, {'stimulus_number': 64, 'answer_left': 11, 'answer_right': 91, 'corr_answer': 'w', 'diff_left': 53, 'diff_right': 27, 'choice_diff': 26}, {'stimulus_number': 42, 'answer_left': 1, 'answer_right': 59, 'corr_answer': 'w', 'diff_left': 41, 'diff_right': 17, 'choice_diff': 24}, {'stimulus_number': 41, 'answer_left': 76, 'answer_right': 33, 'corr_answer': 'w', 'diff_left': 35, 'diff_right': 8, 'choice_diff': 27}, {'stimulus_number': 39, 'answer_left': 33, 'answer_right': 74, 'corr_answer': 'n', 'diff_left': 6, 'diff_right': 35, 'choice_diff': 29}, {'stimulus_number': 50, 'answer_left': 63, 'answer_right': 13, 'corr_answer': 'n', 'diff_left': 13, 'diff_right': 37, 'choice_diff': 24}, {'stimulus_number': 28, 'answer_left': 19, 'answer_right': 65, 'corr_answer': 'n', 'diff_left': 9, 'diff_right': 37, 'choice_diff': 28}, {'stimulus_number': 68, 'answer_left': 25, 'answer_right': 90, 'corr_answer': 'w', 'diff_left': 43, 'diff_right': 22, 'choice_diff': 21}, {'stimulus_number': 37, 'answer_left': 86, 'answer_right': 25, 'corr_answer': 'w', 'diff_left': 49, 'diff_right': 12, 'choice_diff': 37}, {'stimulus_number': 16, 'answer_left': 47, 'answer_right': 10, 'corr_answer': 'w', 'diff_left': 31, 'diff_right': 6, 'choice_diff': 25}, {'stimulus_number': 65, 'answer_left': 76, 'answer_right': 29, 'corr_answer': 'n', 'diff_left': 11, 'diff_right': 36, 'choice_diff': 25}, {'stimulus_number': 79, 'answer_left': 84, 'answer_right': 53, 'corr_answer': 'n', 'diff_left': 5, 'diff_right': 26, 'choice_diff': 21}, {'stimulus_number': 50, 'answer_left': 46, 'answer_right': 91, 'corr_answer': 'n', 'diff_left': 4, 'diff_right': 41, 'choice_diff': 37}, {'stimulus_number': 51, 'answer_left': 88, 'answer_right': 43, 'corr_answer': 'w', 'diff_left': 37, 'diff_right': 8, 'choice_diff': 29}, {'stimulus_number': 57, 'answer_left': 13, 'answer_right': 74, 'corr_answer': 'w', 'diff_left': 44, 'diff_right': 17, 'choice_diff': 27}, {'stimulus_number': 26, 'answer_left': 93, 'answer_right': 9, 'corr_answer': 'w', 'diff_left': 67, 'diff_right': 17, 'choice_diff': 50}, {'stimulus_number': 41, 'answer_left': 36, 'answer_right': 69, 'corr_answer': 'n', 'diff_left': 5, 'diff_right': 28, 'choice_diff': 23}, {'stimulus_number': 64, 'answer_left': 77, 'answer_right': 26, 'corr_answer': 'n', 'diff_left': 13, 'diff_right': 38, 'choice_diff': 25}, {'stimulus_number': 52, 'answer_left': 35, 'answer_right': 93, 'corr_answer': 'n', 'diff_left': 17, 'diff_right': 41, 'choice_diff': 24}, {'stimulus_number': 75, 'answer_left': 8, 'answer_right': 90, 'corr_answer': 'w', 'diff_left': 67, 'diff_right': 15, 'choice_diff': 52}, {'stimulus_number': 47, 'answer_left': 88, 'answer_right': 34, 'corr_answer': 'w', 'diff_left': 41, 'diff_right': 13, 'choice_diff': 28}, {'stimulus_number': 39, 'answer_left': 84, 'answer_right': 25, 'corr_answer': 'w', 'diff_left': 45, 'diff_right': 14, 'choice_diff': 31}, {'stimulus_number': 41, 'answer_left': 20, 'answer_right': 90, 'corr_answer': 'n', 'diff_left': 21, 'diff_right': 49, 'choice_diff': 28}, {'stimulus_number': 77, 'answer_left': 90, 'answer_right': 32, 'corr_answer': 'n', 'diff_left': 13, 'diff_right': 45, 'choice_diff': 32}, {'stimulus_number': 49, 'answer_left': 63, 'answer_right': 14, 'corr_answer': 'n', 'diff_left': 14, 'diff_right': 35, 'choice_diff': 21}, {'stimulus_number': 60, 'answer_left': 12, 'answer_right': 80, 'corr_answer': 'w', 'diff_left': 48, 'diff_right': 20, 'choice_diff': 28}, {'stimulus_number': 36, 'answer_left': 6, 'answer_right': 49, 'corr_answer': 'w', 'diff_left': 30, 'diff_right': 13, 'choice_diff': 17}, {'stimulus_number': 66, 'answer_left': 31, 'answer_right': 79, 'corr_answer': 'w', 'diff_left': 35, 'diff_right': 13, 'choice_diff': 22}, {'stimulus_number': 15, 'answer_left': 1, 'answer_right': 63, 'corr_answer': 'n', 'diff_left': 14, 'diff_right': 48, 'choice_diff': 34}, {'stimulus_number': 84, 'answer_left': 98, 'answer_right': 46, 'corr_answer': 'n', 'diff_left': 14, 'diff_right': 38, 'choice_diff': 24}, {'stimulus_number': 41, 'answer_left': 50, 'answer_right': 13, 'corr_answer': 'n', 'diff_left': 9, 'diff_right': 28, 'choice_diff': 19}, {'stimulus_number': 61, 'answer_left': 13, 'answer_right': 73, 'corr_answer': 'w', 'diff_left': 48, 'diff_right': 12, 'choice_diff': 36}, {'stimulus_number': 86, 'answer_left': 53, 'answer_right': 96, 'corr_answer': 'w', 'diff_left': 33, 'diff_right': 10, 'choice_diff': 23}, {'stimulus_number': 40, 'answer_left': 100, 'answer_right': 11, 'corr_answer': 'w', 'diff_left': 60, 'diff_right': 29, 'choice_diff': 31}, {'stimulus_number': 89, 'answer_left': 94, 'answer_right': 55, 'corr_answer': 'n', 'diff_left': 5, 'diff_right': 34, 'choice_diff': 29}, {'stimulus_number': 19, 'answer_left': 15, 'answer_right': 48, 'corr_answer': 'n', 'diff_left': 4, 'diff_right': 29, 'choice_diff': 25}, {'stimulus_number': 78, 'answer_left': 96, 'answer_right': 24, 'corr_answer': 'n', 'diff_left': 18, 'diff_right': 54, 'choice_diff': 36}, {'stimulus_number': 31, 'answer_left': 1, 'answer_right': 35, 'corr_answer': 'w', 'diff_left': 30, 'diff_right': 4, 'choice_diff': 26}, {'stimulus_number': 68, 'answer_left': 19, 'answer_right': 84, 'corr_answer': 'w', 'diff_left': 49, 'diff_right': 16, 'choice_diff': 33}, {'stimulus_number': 72, 'answer_left': 12, 'answer_right': 88, 'corr_answer': 'w', 'diff_left': 60, 'diff_right': 16, 'choice_diff': 44}, {'stimulus_number': 56, 'answer_left': 75, 'answer_right': 11, 'corr_answer': 'n', 'diff_left': 19, 'diff_right': 45, 'choice_diff': 26}, {'stimulus_number': 84, 'answer_left': 95, 'answer_right': 40, 'corr_answer': 'n', 'diff_left': 11, 'diff_right': 44, 'choice_diff': 33}, {'stimulus_number': 44, 'answer_left': 54, 'answer_right': 8, 'corr_answer': 'n', 'diff_left': 10, 'diff_right': 36, 'choice_diff': 26}, {'stimulus_number': 67, 'answer_left': 95, 'answer_right': 63, 'corr_answer': 'w', 'diff_left': 28, 'diff_right': 4, 'choice_diff': 24}, {'stimulus_number': 21, 'answer_left': 2, 'answer_right': 27, 'corr_answer': 'w', 'diff_left': 19, 'diff_right': 6, 'choice_diff': 13}, {'stimulus_number': 40, 'answer_left': 92, 'answer_right': 11, 'corr_answer': 'w', 'diff_left': 52, 'diff_right': 29, 'choice_diff': 23}, {'stimulus_number': 14, 'answer_left': 2, 'answer_right': 62, 'corr_answer': 'n', 'diff_left': 12, 'diff_right': 48, 'choice_diff': 36}, {'stimulus_number': 65, 'answer_left': 61, 'answer_right': 94, 'corr_answer': 'n', 'diff_left': 4, 'diff_right': 29, 'choice_diff': 25}, {'stimulus_number': 36, 'answer_left': 28, 'answer_right': 77, 'corr_answer': 'n', 'diff_left': 8, 'diff_right': 41, 'choice_diff': 33}, {'stimulus_number': 27, 'answer_left': 77, 'answer_right': 2, 'corr_answer': 'w', 'diff_left': 50, 'diff_right': 25, 'choice_diff': 25}, {'stimulus_number': 66, 'answer_left': 25, 'answer_right': 87, 'corr_answer': 'w', 'diff_left': 41, 'diff_right': 21, 'choice_diff': 20}, {'stimulus_number': 51, 'answer_left': 13, 'answer_right': 68, 'corr_answer': 'w', 'diff_left': 38, 'diff_right': 17, 'choice_diff': 21}, {'stimulus_number': 19, 'answer_left': 15, 'answer_right': 45, 'corr_answer': 'n', 'diff_left': 4, 'diff_right': 26, 'choice_diff': 22}, {'stimulus_number': 49, 'answer_left': 58, 'answer_right': 13, 'corr_answer': 'n', 'diff_left': 9, 'diff_right': 36, 'choice_diff': 27}, {'stimulus_number': 74, 'answer_left': 83, 'answer_right': 40, 'corr_answer': 'n', 'diff_left': 9, 'diff_right': 34, 'choice_diff': 25}, {'stimulus_number': 74, 'answer_left': 97, 'answer_right': 70, 'corr_answer': 'w', 'diff_left': 23, 'diff_right': 4, 'choice_diff': 19}, {'stimulus_number': 25, 'answer_left': 88, 'answer_right': 17, 'corr_answer': 'w', 'diff_left': 63, 'diff_right': 8, 'choice_diff': 55}, {'stimulus_number': 36, 'answer_left': 9, 'answer_right': 42, 'corr_answer': 'w', 'diff_left': 27, 'diff_right': 6, 'choice_diff': 21}, {'stimulus_number': 50, 'answer_left': 56, 'answer_right': 24, 'corr_answer': 'n', 'diff_left': 6, 'diff_right': 26, 'choice_diff': 20}, {'stimulus_number': 61, 'answer_left': 80, 'answer_right': 10, 'corr_answer': 'n', 'diff_left': 19, 'diff_right': 51, 'choice_diff': 32}, {'stimulus_number': 27, 'answer_left': 11, 'answer_right': 87, 'corr_answer': 'n', 'diff_left': 16, 'diff_right': 60, 'choice_diff': 44}, {'stimulus_number': 34, 'answer_left': 63, 'answer_right': 27, 'corr_answer': 'w', 'diff_left': 29, 'diff_right': 7, 'choice_diff': 22}, {'stimulus_number': 86, 'answer_left': 35, 'answer_right': 95, 'corr_answer': 'w', 'diff_left': 51, 'diff_right': 9, 'choice_diff': 42}, {'stimulus_number': 22, 'answer_left': 61, 'answer_right': 9, 'corr_answer': 'w', 'diff_left': 39, 'diff_right': 13, 'choice_diff': 26}, {'stimulus_number': 40, 'answer_left': 31, 'answer_right': 65, 'corr_answer': 'n', 'diff_left': 9, 'diff_right': 25, 'choice_diff': 16}, {'stimulus_number': 83, 'answer_left': 99, 'answer_right': 34, 'corr_answer': 'n', 'diff_left': 16, 'diff_right': 49, 'choice_diff': 33}, {'stimulus_number': 29, 'answer_left': 21, 'answer_right': 63, 'corr_answer': 'n', 'diff_left': 8, 'diff_right': 34, 'choice_diff': 26}, {'stimulus_number': 45, 'answer_left': 1, 'answer_right': 64, 'corr_answer': 'w', 'diff_left': 44, 'diff_right': 19, 'choice_diff': 25}, {'stimulus_number': 59, 'answer_left': 31, 'answer_right': 68, 'corr_answer': 'w', 'diff_left': 28, 'diff_right': 9, 'choice_diff': 19}, {'stimulus_number': 72, 'answer_left': 13, 'answer_right': 83, 'corr_answer': 'w', 'diff_left': 59, 'diff_right': 11, 'choice_diff': 48}, {'stimulus_number': 25, 'answer_left': 9, 'answer_right': 67, 'corr_answer': 'n', 'diff_left': 16, 'diff_right': 42, 'choice_diff': 26}, {'stimulus_number': 57, 'answer_left': 45, 'answer_right': 93, 'corr_answer': 'n', 'diff_left': 12, 'diff_right': 36, 'choice_diff': 24}, {'stimulus_number': 47, 'answer_left': 68, 'answer_right': 5, 'corr_answer': 'n', 'diff_left': 21, 'diff_right': 42, 'choice_diff': 21}, {'stimulus_number': 29, 'answer_left': 66, 'answer_right': 13, 'corr_answer': 'w', 'diff_left': 37, 'diff_right': 16, 'choice_diff': 21}, {'stimulus_number': 72, 'answer_left': 11, 'answer_right': 88, 'corr_answer': 'w', 'diff_left': 61, 'diff_right': 16, 'choice_diff': 45}, {'stimulus_number': 67, 'answer_left': 13, 'answer_right': 95, 'corr_answer': 'w', 'diff_left': 54, 'diff_right': 28, 'choice_diff': 26}, {'stimulus_number': 41, 'answer_left': 52, 'answer_right': 4, 'corr_answer': 'n', 'diff_left': 11, 'diff_right': 37, 'choice_diff': 26}, {'stimulus_number': 43, 'answer_left': 48, 'answer_right': 16, 'corr_answer': 'n', 'diff_left': 5, 'diff_right': 27, 'choice_diff': 22}, {'stimulus_number': 55, 'answer_left': 70, 'answer_right': 22, 'corr_answer': 'n', 'diff_left': 15, 'diff_right': 33, 'choice_diff': 18}, {'stimulus_number': 54, 'answer_left': 92, 'answer_right': 37, 'corr_answer': 'w', 'diff_left': 38, 'diff_right': 17, 'choice_diff': 21}, {'stimulus_number': 82, 'answer_left': 36, 'answer_right': 99, 'corr_answer': 'w', 'diff_left': 46, 'diff_right': 17, 'choice_diff': 29}, {'stimulus_number': 66, 'answer_left': 32, 'answer_right': 80, 'corr_answer': 'w', 'diff_left': 34, 'diff_right': 14, 'choice_diff': 20}, {'stimulus_number': 62, 'answer_left': 66, 'answer_right': 40, 'corr_answer': 'n', 'diff_left': 4, 'diff_right': 22, 'choice_diff': 18}, {'stimulus_number': 34, 'answer_left': 1, 'answer_right': 98, 'corr_answer': 'n', 'diff_left': 33, 'diff_right': 64, 'choice_diff': 31}, {'stimulus_number': 22, 'answer_left': 10, 'answer_right': 67, 'corr_answer': 'n', 'diff_left': 12, 'diff_right': 45, 'choice_diff': 33}, {'stimulus_number': 45, 'answer_left': 3, 'answer_right': 64, 'corr_answer': 'w', 'diff_left': 42, 'diff_right': 19, 'choice_diff': 23}, {'stimulus_number': 45, 'answer_left': 84, 'answer_right': 31, 'corr_answer': 'w', 'diff_left': 39, 'diff_right': 14, 'choice_diff': 25}, {'stimulus_number': 65, 'answer_left': 24, 'answer_right': 82, 'corr_answer': 'w', 'diff_left': 41, 'diff_right': 17, 'choice_diff': 24}, {'stimulus_number': 78, 'answer_left': 96, 'answer_right': 28, 'corr_answer': 'n', 'diff_left': 18, 'diff_right': 50, 'choice_diff': 32}, {'stimulus_number': 58, 'answer_left': 72, 'answer_right': 23, 'corr_answer': 'n', 'diff_left': 14, 'diff_right': 35, 'choice_diff': 21}, {'stimulus_number': 24, 'answer_left': 8, 'answer_right': 66, 'corr_answer': 'n', 'diff_left': 16, 'diff_right': 42, 'choice_diff': 26}, {'stimulus_number': 59, 'answer_left': 17, 'answer_right': 81, 'corr_answer': 'w', 'diff_left': 42, 'diff_right': 22, 'choice_diff': 20}, {'stimulus_number': 59, 'answer_left': 98, 'answer_right': 43, 'corr_answer': 'w', 'diff_left': 39, 'diff_right': 16, 'choice_diff': 23}, {'stimulus_number': 78, 'answer_left': 14, 'answer_right': 100, 'corr_answer': 'w', 'diff_left': 64, 'diff_right': 22, 'choice_diff': 42}, {'stimulus_number': 62, 'answer_left': 44, 'answer_right': 100, 'corr_answer': 'n', 'diff_left': 18, 'diff_right': 38, 'choice_diff': 20}, {'stimulus_number': 50, 'answer_left': 32, 'answer_right': 91, 'corr_answer': 'n', 'diff_left': 18, 'diff_right': 41, 'choice_diff': 23}, {'stimulus_number': 67, 'answer_left': 84, 'answer_right': 28, 'corr_answer': 'n', 'diff_left': 17, 'diff_right': 39, 'choice_diff': 22}, {'stimulus_number': 26, 'answer_left': 57, 'answer_right': 19, 'corr_answer': 'w', 'diff_left': 31, 'diff_right': 7, 'choice_diff': 24}, {'stimulus_number': 32, 'answer_left': 67, 'answer_right': 23, 'corr_answer': 'w', 'diff_left': 35, 'diff_right': 9, 'choice_diff': 26}, {'stimulus_number': 54, 'answer_left': 88, 'answer_right': 47, 'corr_answer': 'w', 'diff_left': 34, 'diff_right': 7, 'choice_diff': 27}, {'stimulus_number': 62, 'answer_left': 74, 'answer_right': 23, 'corr_answer': 'n', 'diff_left': 12, 'diff_right': 39, 'choice_diff': 27}, {'stimulus_number': 48, 'answer_left': 64, 'answer_right': 12, 'corr_answer': 'n', 'diff_left': 16, 'diff_right': 36, 'choice_diff': 20}, {'stimulus_number': 53, 'answer_left': 75, 'answer_right': 13, 'corr_answer': 'n', 'diff_left': 22, 'diff_right': 40, 'choice_diff': 18}, {'stimulus_number': 32, 'answer_left': 76, 'answer_right': 20, 'corr_answer': 'w', 'diff_left': 44, 'diff_right': 12, 'choice_diff': 32}, {'stimulus_number': 24, 'answer_left': 58, 'answer_right': 12, 'corr_answer': 'w', 'diff_left': 34, 'diff_right': 12, 'choice_diff': 22}, {'stimulus_number': 29, 'answer_left': 64, 'answer_right': 14, 'corr_answer': 'w', 'diff_left': 35, 'diff_right': 15, 'choice_diff': 20}, {'stimulus_number': 52, 'answer_left': 64, 'answer_right': 18, 'corr_answer': 'n', 'diff_left': 12, 'diff_right': 34, 'choice_diff': 22}, {'stimulus_number': 44, 'answer_left': 32, 'answer_right': 79, 'corr_answer': 'n', 'diff_left': 12, 'diff_right': 35, 'choice_diff': 23}, {'stimulus_number': 26, 'answer_left': 5, 'answer_right': 70, 'corr_answer': 'n', 'diff_left': 21, 'diff_right': 44, 'choice_diff': 23}, {'stimulus_number': 42, 'answer_left': 67, 'answer_right': 35, 'corr_answer': 'w', 'diff_left': 25, 'diff_right': 7, 'choice_diff': 18}, {'stimulus_number': 71, 'answer_left': 4, 'answer_right': 93, 'corr_answer': 'w', 'diff_left': 67, 'diff_right': 22, 'choice_diff': 45}, {'stimulus_number': 26, 'answer_left': 80, 'answer_right': 1, 'corr_answer': 'w', 'diff_left': 54, 'diff_right': 25, 'choice_diff': 29}, {'stimulus_number': 88, 'answer_left': 100, 'answer_right': 43, 'corr_answer': 'n', 'diff_left': 12, 'diff_right': 45, 'choice_diff': 33}, {'stimulus_number': 24, 'answer_left': 9, 'answer_right': 76, 'corr_answer': 'n', 'diff_left': 15, 'diff_right': 52, 'choice_diff': 37}, {'stimulus_number': 12, 'answer_left': 1, 'answer_right': 40, 'corr_answer': 'n', 'diff_left': 11, 'diff_right': 28, 'choice_diff': 17}, {'stimulus_number': 59, 'answer_left': 90, 'answer_right': 48, 'corr_answer': 'w', 'diff_left': 31, 'diff_right': 11, 'choice_diff': 20}, {'stimulus_number': 48, 'answer_left': 82, 'answer_right': 36, 'corr_answer': 'w', 'diff_left': 34, 'diff_right': 12, 'choice_diff': 22}, {'stimulus_number': 58, 'answer_left': 10, 'answer_right': 83, 'corr_answer': 'w', 'diff_left': 48, 'diff_right': 25, 'choice_diff': 23}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="distractor_conditions.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="distractor_block" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="distractor_trial"/>
+    <LoopTerminator name="distractor_block"/>
+    <Routine name="distractor_fix"/>
+    <LoopTerminator name="block_ordering_loop"/>
+    <Routine name="thanks"/>
+  </Flow>
+</PsychoPy2experiment>
