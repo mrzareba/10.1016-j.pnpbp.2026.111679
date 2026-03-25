@@ -1,0 +1,6 @@
+In order to use the task, you need open the associated file (guilt_task.psyexp) using a local PsychoPy version.
+
+Block_order.xlsx contains an example of personalised sequence of autobiographical guilt and neutral memories that a participant relived inside the MRI scanner. G1-G5 and N1-N5 represent, respectively, their guilt and neutral memories in the same order as provided during recruitment for the study. The column 'correct_answer' needs to be adjusted to the specific way in which your setup codes the button box responses. The button box output additionally needs to be added to the "Allowed keys" window of the "memory_question_resp" compontent inside the "memory_block" routine.
+Last but not least, the "distractor_n" column signifies the number of repetitions of the Magnitude judgement task that took place after the particular memory-related epoch.
+
+The "corr_answer" column of the Magnitude judgement task stimuli (distractor_conditions.xlsx), and allowed responses for the "distractor_resp" component of the "distractor_trial" routine need to be similarly adjusted to your button boxes.
