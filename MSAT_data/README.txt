@@ -1,4 +1,5 @@
 The file "msat-demographics-and-data-per-agency.xlsx" contains the data generated using the Moral Sentiment and Action Tendencies (MSAT) task (Zahn et al., 2015; Duan et al., 2023). The strength of self- and other-blaming emotions was averaged across all the trials in each condition (i.e. self- and other-agency). The proportion of trials where participants felt certain emotions or reported taking particular action was similarly calculated separately for each agency condition.
+
 STAI-T column denotes trait-anxiety as assessed with State-Trait Anxiety Inventory (Spielberger, 1989).
 BIS marks the total score for the behavioural inhibition system, as assessed with Behavioral Inhibition and Behavioral Activation System (BIS/BAS; Carver and White, 1994).
 SPSRQ-Punishment and SPSRQ-Reward stand for, respectively, the sensitivity to punishment and reward obtained with the Sensitivity to Punishment and Sensitivity to Rewards Questionnaire (SPSRQ; Torrubia et al., 2001)
