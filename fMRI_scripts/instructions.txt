@@ -1,0 +1,2 @@
+The scripts for the fMRI task data processing should be run in the order specified in the filenames (from 01 to 03). In short, they include all the steps from converting dcm files to nii images until the delivery of subject-level statistical outputs.
+The script for the resting-state fMRI data processing should be run after the initial preprocessing with fMRIprep.
